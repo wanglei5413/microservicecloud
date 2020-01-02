@@ -22,14 +22,14 @@ public class ConfigBean {
 		return new RestTemplate();
 	}
 	
-	@Bean
-	public IRule MyRule() {
+//	@Bean
+//	public IRule MyRule() {
 //		return new RoundRobinRule();//轮询 默认
 //		return new RandomRule();//随机 
 //		return new RetryRule();//retry 
 //		return new AvailabilityFilteringRule();//不可用性过滤 
 //		return new BestAvailableRule();//最佳可用 
 //		return new WeightedResponseTimeRule();//权重相应时间
-		return new ZoneAvoidanceRule();//
-	}
+//		return new ZoneAvoidanceRule();//
+//	}
 }
