@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.techlei.springcloud.entities.Dept;
 
-@FeignClient(value="MICROSERVICECLOUD-DEPT")
+@FeignClient(value="MICROSERVICECLOUD-DEPT",fallbackFactory=DeptClientServiceFallBackFactory.class)
 public interface DeptClientService {
 	@RequestMapping(value="/dept/add",method=RequestMethod.POST)
 	public boolean add(@RequestBody Dept dept);
