@@ -16,6 +16,11 @@
 			<artifactId>microservicecloud-api</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<!--aop切面-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 		<!-- actuator监控信息完善 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
