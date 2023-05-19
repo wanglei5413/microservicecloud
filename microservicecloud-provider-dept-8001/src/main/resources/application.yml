@@ -35,3 +35,12 @@ info:
   company.name: www.techlei.wang
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+
+
+#分页插件配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+

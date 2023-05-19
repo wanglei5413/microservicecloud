@@ -8,7 +8,7 @@
 		select deptno,dname,db_source from dept where deptno=#{deptno};
 	</select>
 	<select id="findAll" resultType="Dept">
-		select deptno,dname,db_source from dept;
+		select deptno,dname,db_source from dept
 	</select>
 	<insert id="addDept" parameterType="Dept">
 		INSERT INTO dept(dname,db_source) VALUES(#{dname},DATABASE());

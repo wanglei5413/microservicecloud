@@ -2,6 +2,7 @@ package com.techlei.springcloud.service;
 
 import java.util.List;
 
+import com.github.pagehelper.PageInfo;
 import com.techlei.springcloud.entities.Dept;
 
 public interface DeptService {
@@ -10,4 +11,6 @@ public interface DeptService {
 	public Dept get(Long id);
 
 	public List<Dept> list();
+
+    PageInfo<Dept> page(Integer pageNo, Integer pageSize);
 }

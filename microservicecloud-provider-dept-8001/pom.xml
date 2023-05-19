@@ -16,6 +16,12 @@
 			<artifactId>microservicecloud-api</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<!--pagehelper mytbatis分页插件-->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.4.6</version>
+		</dependency>
 		<!--aop切面-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

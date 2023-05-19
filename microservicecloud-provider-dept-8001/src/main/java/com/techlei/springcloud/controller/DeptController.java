@@ -2,6 +2,7 @@ package com.techlei.springcloud.controller;
 
 import java.util.List;
 
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -50,4 +51,14 @@ public class DeptController {
 		int j=1/i;
 		return "结果"+j;
 	}
+
+	/**
+	 * 分页
+	 * @return
+	 */
+	@RequestMapping(value="/dept/page",method=RequestMethod.GET)
+	public PageInfo<Dept> page(@RequestParam("pageNo") Integer  pageNo, @RequestParam("pageSize") Integer pageSize){
+		return service.page(pageNo,pageSize);
+	}
+
 }
